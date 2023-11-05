@@ -33,9 +33,9 @@ Agradecemos las contribuciones de la comunidad para mejorar este proyecto. Si de
 
 ## Contacto
 Si tienes preguntas o necesitas ayuda, no dudes en contactarnos a través de:
-- (sellooricalcos@gmail.com)
-- (ernestojuarezgutierez03@gmail.com)
-- (diegomarceloledezma@gmail.com)
-- (natabilbaocano18@gmail.com)
+- sellooricalcos@gmail.com
+- ernestojuarezgutierez03@gmail.com
+- diegomarceloledezma@gmail.com
+- natabilbaocano18@gmail.com
 
 Esperamos que este proyecto ayude a optimizar la asignación de recursos en redes de tareas y a maximizar la eficiencia. ¡Gracias por contribuir!
