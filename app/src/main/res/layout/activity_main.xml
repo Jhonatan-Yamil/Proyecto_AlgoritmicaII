@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,12 +6,77 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textViewHeader"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Ingrese los datos:"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/editTextNumTareas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de tareas"
+        android:layout_below="@id/textViewHeader"
+        />
+
+    <EditText
+        android:id="@+id/editTextTareas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombres de tareas (una por línea)"
+        android:layout_below="@id/editTextNumTareas"
+        />
+
+    <EditText
+        android:id="@+id/editTextSource"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tarea de inicio"
+        android:layout_below="@id/editTextTareas"
+        />
+
+    <EditText
+        android:id="@+id/editTextSink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tarea final"
+        android:layout_below="@id/editTextSource"
+        />
+
+    <EditText
+        android:id="@+id/editTextAristas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de aristas"
+        android:layout_below="@id/editTextSink"
+        />
+
+    <EditText
+        android:id="@+id/editTextDatosAristas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Datos de las aristas (fromTarea toTarea capacity, una por línea)"
+        android:layout_below="@id/editTextAristas"
+        />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:layout_below="@id/editTextDatosAristas"
+        />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCalculate"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        />
+
+</RelativeLayout>
