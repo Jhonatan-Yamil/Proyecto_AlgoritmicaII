@@ -1,82 +1,122 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/azul_marino"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textViewHeader"
+    <LinearLayout
+        android:id="@+id/menu_barra"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ingrese los datos:"
-        android:layout_marginTop="16dp"
-        android:gravity="center"
-        />
+        android:layout_height="64dp"
+        android:background="@color/naranja">
+
+        <TextView
+            android:id="@+id/textViewHeader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/ingrese_los_datos"
+            android:textStyle="bold"
+            android:textColor="@color/morado"
+            android:textSize="36sp"
+            android:gravity="center">
+        </TextView>
+    </LinearLayout>
 
     <EditText
         android:id="@+id/editTextNumTareas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Número de tareas"
-        android:layout_below="@id/textViewHeader"
+        android:hint="@string/hint_numero_de_tareas"
+        android:textColorHint="@color/azul_claro"
+        android:textSize="20sp"
+        android:textColor="@color/naranja"
+        android:backgroundTint="@color/morado"
+        android:layout_marginTop="18dp"
         />
 
     <EditText
         android:id="@+id/editTextTareas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombres de tareas (una por línea)"
-        android:layout_below="@id/editTextNumTareas"
+        android:textColorHint="@color/azul_claro"
+        android:textSize="20sp"
+        android:textColor="@color/naranja"
+        android:backgroundTint="@color/morado"
+        android:layout_marginTop="18dp"
+        android:hint="@string/hint_texto_tareas"
         />
 
     <EditText
         android:id="@+id/editTextSource"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Tarea de inicio"
-        android:layout_below="@id/editTextTareas"
+        android:textColorHint="@color/azul_claro"
+        android:textSize="20sp"
+        android:textColor="@color/naranja"
+        android:backgroundTint="@color/morado"
+        android:layout_marginTop="18dp"
+        android:hint="@string/hint_tarea_inicio"
         />
 
     <EditText
         android:id="@+id/editTextSink"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Tarea final"
-        android:layout_below="@id/editTextSource"
+        android:textColorHint="@color/azul_claro"
+        android:textSize="20sp"
+        android:textColor="@color/naranja"
+        android:backgroundTint="@color/morado"
+        android:layout_marginTop="18dp"
+        android:hint="@string/hint_tarea_final"
         />
 
     <EditText
         android:id="@+id/editTextAristas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Número de aristas"
-        android:layout_below="@id/editTextSink"
+        android:textColorHint="@color/azul_claro"
+        android:textSize="20sp"
+        android:textColor="@color/naranja"
+        android:backgroundTint="@color/morado"
+        android:layout_marginTop="18dp"
+        android:hint="@string/hint_numero_aristas"
         />
 
     <EditText
         android:id="@+id/editTextDatosAristas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Datos de las aristas (fromTarea toTarea capacity, una por línea)"
-        android:layout_below="@id/editTextAristas"
+        android:textColorHint="@color/azul_claro"
+        android:textSize="20sp"
+        android:textColor="@color/naranja"
+        android:backgroundTint="@color/morado"
+        android:layout_marginTop="18dp"
+        android:hint="@string/hint_restricciones"
         />
 
     <Button
         android:id="@+id/buttonCalculate"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calcular"
-        android:layout_below="@id/editTextDatosAristas"
+        android:text="@string/calcular"
+        android:textColor="@color/morado"
+        android:layout_gravity="center"
+        android:layout_marginTop="26dp"
+        android:textSize="34sp"
+        android:backgroundTint="@color/naranja"
         />
 
     <TextView
         android:id="@+id/textViewResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/buttonCalculate"
+        android:textColor="@color/cyan"
+        android:textSize="28sp"
         android:layout_marginTop="16dp"
         android:gravity="center"
         />
 
-</RelativeLayout>
+</LinearLayout>

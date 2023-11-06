@@ -9,6 +9,7 @@ import java.util.*
 import kotlin.collections.HashMap
 import kotlin.math.min
 
+
 class MainActivity : AppCompatActivity() {
 
     val inf = 1e9.toInt()
@@ -74,7 +75,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             val maxFlow = maxFlow(grafo, s, t)
-            resultTextView.text = "El flujo máximo es: $maxFlow"
+            resultTextView.text = "El Recurso Optimizado es: $maxFlow"
         }
     }
 

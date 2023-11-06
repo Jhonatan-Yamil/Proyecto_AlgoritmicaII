@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">Proyecto_Algoritmica_II</string>
+    <string name="terminos">TÉRMINOS</string>
+    <string name="numero_de_tareas">Número de tareas</string>
+    <string name="texto_numero_de_tareas">Vendrían a ser los nodos del grafo, tienes que declarar el numero de nodos.</string>
+    <string name="nombres_de_tareas">Nombres de tareas</string>
+    <string name="texto_nombres_de_tareas">Nombrar el título de la tarea que se quiere hacer, puede ser en minúscula o mayúscula pero no debe haber ningun espacio.</string>
+    <string name="tarea_de_inicio">Tarea de inicio</string>
+    <string name="texto_tarea_de_inicio">Es el nodo inicial, la tarea por donde se tiene que comenzar todo el proceso.</string>
+    <string name="tarea_final">Tarea final</string>
+    <string name="texto_tarea_final">Es el nodo final u objetivo, es la tarea donde acabara todo el proceso.</string>
+    <string name="numero_de_aristas">Número de aristas</string>
+    <string name="texto_numero_de_aristas">Serán los recursos que se utilizarán para todo el proceso, estas aristas conectan las tareas.</string>
+    <string name="datos_de_las_aristas">Datos de las aristas</string>
+    <string name="texto_datos_de_las_aristas">Son las restricciones, ya que es un grafo direccionado, algunas tareas tendrán restricciones para completarlas.</string>
+    <string name="entendido">ENTENDIDO</string>
+    <string name="titulo">Optimización de Recursos en una Red de Tareas</string>
+    <string name="comenzar">COMENZAR</string>
+    <string name="ingrese_los_datos">Ingrese los datos</string>
+    <string name="hint_numero_de_tareas">Número de tareas - Ej: 3</string>
+    <string name="hint_texto_tareas">Nombres de tareas (una por línea) - Ej: A B C (Vertical)</string>
+    <string name="hint_tarea_inicio">Tarea de inicio - Ej: A</string>
+    <string name="hint_tarea_final">Tarea final - Ej: C</string>
+    <string name="hint_numero_aristas">Número de aristas - Ej: 1</string>
+    <string name="hint_restricciones">Datos de las aristas (fromTarea toTarea capacity) - Ej: A C 2(Horizontal)</string>
+    <string name="calcular">Calcular</string>
 </resources>

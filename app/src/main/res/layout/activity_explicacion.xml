@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_marino"
+    android:orientation="vertical"
+    tools:context=".PantallaInicioActivity">
+
+    <LinearLayout
+        android:id="@+id/menu_barra"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/naranja">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/terminos"
+            android:textColor="@color/morado"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="35sp">
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/numero_de_tareas"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/azul_claro"
+        android:gravity="center">
+    </TextView>
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_numero_de_tareas"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/white">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nombres_de_tareas"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/azul_claro"
+        android:gravity="center">
+    </TextView>
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_nombres_de_tareas"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:gravity="center">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tarea_de_inicio"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/azul_claro"
+        android:textStyle="bold"
+        android:gravity="center">
+    </TextView>
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_tarea_de_inicio"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:gravity="center">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tarea_final"
+        android:textColor="@color/azul_claro"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:gravity="center">
+    </TextView>
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/texto_tarea_final"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:gravity="center">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/numero_de_aristas"
+        android:textSize="20sp"
+        android:textColor="@color/azul_claro"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:gravity="center">
+    </TextView>
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/texto_numero_de_aristas"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:gravity="center">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/datos_de_las_aristas"
+        android:textSize="20sp"
+        android:textColor="@color/azul_claro"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:gravity="center">
+    </TextView>
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/texto_datos_de_las_aristas"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:gravity="center">
+    </TextView>
+
+    <Button
+        android:id="@+id/boton_entendido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/entendido"
+        android:textColor="@color/morado"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp"
+        android:backgroundTint="@color/naranja">
+    </Button>
+</LinearLayout>
