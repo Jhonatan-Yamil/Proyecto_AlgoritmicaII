@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import java.util.*
 import kotlin.collections.HashMap
 import kotlin.math.min
@@ -69,11 +70,14 @@ class MainActivity : AppCompatActivity() {
                 val to = pos[toTarea] ?: -1
 
                 if (from != -1 && to != -1) {
-                    grafo[from][to] = capacity
-                    grafo[to][from] = 0
+                    if (from == to){
+                        Toast.makeText(this, "From y To deben ser diferentes", Toast.LENGTH_SHORT).show()
+                    }else{
+                        grafo[from][to] = capacity
+                        grafo[to][from] = 0
+                    }
                 }
             }
-
             val maxFlow = maxFlow(grafo, s, t)
             resultTextView.text = "El Recurso Optimizado es: $maxFlow"
         }
