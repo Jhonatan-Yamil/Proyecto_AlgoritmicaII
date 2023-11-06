@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
             val pos = HashMap<String, Int>()
 
             for (i in 0 until numTareas) {
-                val tarea = scannerTareas.next()
+                val tarea:String = scannerTareas.next()
                 tareas.add(tarea)
                 pos[tarea] = i
             }
